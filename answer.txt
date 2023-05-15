@@ -1,0 +1,9 @@
+ 1.Is JAVA a Pass by Value or a Pass by Reference programming language?
+ In Java, arguments are passed by value, not by reference. This means that when you pass a primitive data type or 
+ an object to a method in Java, a copy of the value or reference is created and passed to the method. Any changes 
+ made to the value or reference within the method do not affect the original value or reference outside the method.
+
+However, it's important to note that when you pass an object to a method in Java, the value that is passed is actually
+ a reference to the object in memory, not the object itself. This can sometimes lead to confusion because it can 
+ appear as though objects are being passed by reference, but in reality, it is just the reference to the object that is 
+ being passed by value.
