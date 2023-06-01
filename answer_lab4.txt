@@ -1,0 +1,10 @@
+1. Cart is an aggregate of Media. Store is an aggregate of Media. CompactDisc is an aggregate of Track.
+2. The equals method should be implemented to return a false value.
+3. Inheritance is used in Java to create relationships between classes. 
+    In this case, since the classes Book, CompactDisc, and DigitalVideoDisc inherit from the 
+    Media class, objects of those classes (book, cd, and dvd) are also considered instances of the Media class.
+4. It is advisable for the Media class to implement the Comparable interface in Java.
+5. The compareTo method in Java is typically used to compare objects. It should return a negative value,
+     positive value, or zero based on the comparison result between two objects.
+6. No, the Comparable interface in Java is designed to be used within a class and can only be implemented by the Media class.
+7. override
