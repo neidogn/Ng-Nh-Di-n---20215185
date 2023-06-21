@@ -2,13 +2,12 @@ package AimsProject.Src.aims;
 
 import java.util.Scanner;
 
-import AimsProject.Src.Media.*;
-import AimsProject.Src.Store.*;
-import AimsProject.Src.Cart.*;
-import AimsProject.Src.Media.DigitalVideoDisc;
+import AimsProject.Src.aims.Cart.*;
+import AimsProject.Src.aims.Media.*;
+import AimsProject.Src.aims.Store.*;
 
 public class aims {
-	// Menu
+	// Menu Design
 	public static void showMenu() {
 		System.out.println("AIMS:");
 		System.out.println("----------------------");
@@ -17,7 +16,7 @@ public class aims {
 		System.out.println("3. See current cart");
 		System.out.println("0. Exit");
 		System.out.println("----------------------");
-		System.out.println("Choose a number: 0-1-2-3");
+		System.out.println("Please choose a number: 0-1-2-3");
 	}
 
 	public static void storeMenu() {
@@ -112,8 +111,8 @@ public class aims {
 								} else if (choice11 == 2) {
 									if (media instanceof Book) {
 										System.out.println("You cannot play a book.");
-									} else if (media instanceof compactDisc) {
-										((compactDisc) media).play();
+									} else if (media instanceof CompactDisc) {
+										((CompactDisc) media).play();
 									} else {
 										((DigitalVideoDisc) media).play();
 									}
@@ -147,8 +146,8 @@ public class aims {
 						} else {
 							if (media instanceof Book) {
 								System.out.println("You cannot play a book.");
-							} else if (media instanceof compactDisc) {
-								((compactDisc) media).play();
+							} else if (media instanceof CompactDisc) {
+								((CompactDisc) media).play();
 							} else {
 								((DigitalVideoDisc) media).play();
 							}
@@ -202,7 +201,7 @@ public class aims {
 							int nbTracks = scanner.nextInt();
 							scanner.nextLine();
 
-							compactDisc cd = new compactDisc(ID, title, category, cost, director, artist);
+							CompactDisc cd = new CompactDisc(ID, title, category, cost, director, artist);
 
 							for (int i = 1; i <= nbTracks; i++) {
 								System.out.println("Enter track # " + i + "title: ");
@@ -282,7 +281,7 @@ public class aims {
 							else if (found instanceof DigitalVideoDisc)
 								((DigitalVideoDisc) found).play();
 							else
-								((compactDisc) found).play();
+								((CompactDisc) found).play();
 						}
 					} else if (choice == 5) {
 						System.out.println("An order is created\n");

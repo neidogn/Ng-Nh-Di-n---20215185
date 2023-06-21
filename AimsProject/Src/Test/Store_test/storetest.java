@@ -1,4 +1,4 @@
-package AimsProject.Src.Store_test;
+package AimsProject.Src.Test.Store_test;
 import AimsProject.Src.Media.DigitalVideoDisc;
 import AimsProject.Src.Store.*;
 public class storetest {
